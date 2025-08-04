@@ -1,0 +1,210 @@
+.main-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5.5rem;
+}
+
+.main-name{
+    padding: 0.75rem;
+}
+
+.header-nav{
+    display: none;
+}
+
+.header-nav a{
+    text-decoration: none;
+}
+
+.main-header p{
+    font-weight: 600;
+    width: 200px;
+}
+
+.main-name h2{
+    color: rgb(41, 61, 151);
+    font-size: 1.75rem;
+}
+
+.main-name h2 span{
+    color: rgb(8, 131, 63);
+    font-size: 1.75rem;
+}
+
+.toggle-container{
+    padding: 0.65rem;
+}
+
+#home{
+    position: relative;
+    background-image: url('../imgs/estetoscope.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#home h1{
+    padding-bottom: 1.4rem;
+    font-size: 35px;
+    font-weight: 700;
+    min-width: 40%;
+    color: #2e4052;
+}
+
+#home h2{
+    font-size: 18px;
+    font-weight: 600;
+    width: 200px;
+}
+
+.presentation{
+    margin-left: 1rem;
+    padding-top: 2.5rem;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 3.5rem;
+    gap: 2rem;
+}
+
+.card-anchor{
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100px;
+    padding: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 12px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#about-us{
+    padding: 2rem 0.5rem
+}
+
+#about-us .about-container{
+    margin-left: 1rem;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+
+.about-container h2{
+    color: #2e4052;
+    padding-bottom: 0.75rem;
+}
+
+.about-container p{
+    font-size: 1.15rem;
+    width: 90%;
+}
+
+.about-container p span{
+    color: rgb(41, 61, 151);
+    font-weight: 700;
+}
+
+.about-container p span span{
+    color: rgb(8, 131, 63);
+    font-weight: 700;
+}
+
+#services{
+    position: relative;
+    background-image: url('../imgs/doctors.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    z-index: 0;
+}
+
+.services-container{
+    margin-left: 1rem;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+
+.services-container .accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.services-container .service-title{
+    margin-bottom: 0.65rem;
+    color: #2e4052;
+}
+
+.accordion{
+    margin-top: 2rem;
+}
+
+.accordion-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--txt-color);
+    width: 85%;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.accordion-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.accordion-toggle{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer
+}
+
+.accordion-toggle img{
+   width: 2rem;
+}
+
+.accordion-header h2{
+    font-size: 1.2rem;
+}
+
+@media (min-width: 280px) and (max-width: 365px){
+    .card{
+        width: 60px;
+        font-size: 60%;
+    }
+
+    .card img{
+        width: 40px;
+    }
+    
+}
+@media (min-width: 306px) and (max-width: 365px){
+    .card{
+        width: 75px;
+        height: 100px;
+        padding: 0.5rem;
+        font-size: 70%;
+    }
+}
