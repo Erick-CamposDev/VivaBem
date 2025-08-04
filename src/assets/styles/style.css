@@ -191,7 +191,7 @@
 }
 
 #contact{
-    padding: 2rem 0.5rem
+    padding: 2rem 0.5rem 3.5rem
 }
 
 .contact-content{
@@ -228,10 +228,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+
+.footer-logo img{
+    max-height: 90%;
+    width: 160px;
+    height: 160px;
+
 }
 
 .main-footer p{
+    text-align: center;
     font-weight: 600;
     font-size: 100%;
 }
@@ -245,6 +255,7 @@
     .card img{
         width: 40px;
     }
+
     
 }
 @media (min-width: 306px) and (max-width: 365px){
