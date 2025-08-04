@@ -133,6 +133,7 @@
     background-repeat: no-repeat;
     height: 550px;
     z-index: 0;
+    padding: 2rem 0.5rem
 }
 
 .services-container{
@@ -187,6 +188,38 @@
 
 .accordion-header h2{
     font-size: 1.2rem;
+}
+
+#contact{
+    padding: 2rem 0.5rem
+}
+
+.contact-content{
+    margin-left: 1rem;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+
+.contact-content .contact-title, .contact-paragraph{
+    padding-bottom: 0.75rem;
+   
+}
+
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    justify-content: center;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-title{
+    color: #2e4052;
 }
 
 @media (min-width: 280px) and (max-width: 365px){
