@@ -222,6 +222,20 @@
     color: #2e4052;
 }
 
+.main-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.main-footer p{
+    font-weight: 600;
+    font-size: 100%;
+}
+
 @media (min-width: 280px) and (max-width: 365px){
     .card{
         width: 60px;
