@@ -380,3 +380,28 @@ html, body{
         font-size: 70%;
     }
 }
+
+@media (min-width: 768px){
+    .nav-mobile{
+        display: none;
+    }
+
+    .header-nav{
+        display: flex;
+        gap: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .header-nav a{
+        color: #2e4052;
+        transition: all 0.3s;
+    }
+
+    .header-nav a:hover{
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+
+}
