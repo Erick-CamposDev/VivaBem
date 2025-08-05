@@ -136,6 +136,12 @@
     padding: 2rem 0.5rem
 }
 
+#services.active{
+    height: 900px;
+    transition: height 0.3s;
+
+}
+
 .services-container{
     margin-left: 1rem;
     padding-top: 2rem;
@@ -184,10 +190,31 @@
 
 .accordion-toggle img{
    width: 2rem;
+   transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-toggle img{
+    transform: rotate(180deg);
 }
 
 .accordion-header h2{
     font-size: 1.2rem;
+}
+
+.accordion-content{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    transition: max-height 0.3s
+}
+
+.accordion-item.active .accordion-content{
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
 #contact{

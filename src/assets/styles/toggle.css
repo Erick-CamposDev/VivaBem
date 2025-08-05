@@ -55,6 +55,14 @@
     background-color: var(--extra-bg-color);
 }
 
+.accodion.item.active{
+    background-color: var(--extra-bg-color);
+}
+
+.accordion-content{
+    background-color: var(--extra-bg-color);
+}
+
 .main-footer{
     background-color: var(--extra-bg-color);
 }
