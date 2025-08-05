@@ -1,3 +1,9 @@
+html, body{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
 .main-header{
     width: 100%;
     display: flex;
@@ -8,6 +14,91 @@
 
 .main-name{
     padding: 0.75rem;
+}
+
+#nav-button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#nav-button:hover{
+    transform: scale(1.15);
+}
+
+#nav-button img{
+    width: 25px;
+    height: 25px;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    left: -250px;
+    width: 175px;
+    height: 45%;
+    transition: left 0.3s;
+    z-index: 1000;
+    font-weight: 600;
+    color: #2e4052;
+
+}
+
+#close-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    padding: 0rem;
+    cursor: pointer;
+    border: none;
+    width: 32px;
+    height: 32px;
+    margin-top: 0.65rem;
+    justify-content: flex-start;
+    margin-left: .8rem;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#close-button:hover{
+    transform: scale(1.03);
+}
+
+#close-button img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-content ul{
+    margin: 0 0 5rem 2rem
+}
+
+.nav-content ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.nav-content.nav-active{
+    left: 0;
+}
+
+.nav-content ul li a{
+    text-decoration: none;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #2e4052;
+}
+
+.nav-content ul li a:hover{
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 .header-nav{
@@ -133,13 +224,12 @@
     background-repeat: no-repeat;
     height: 550px;
     z-index: 0;
-    padding: 2rem 0.5rem
+    padding: 2rem 0.5rem;
+    transition: height 0.3s;
 }
 
 #services.active{
     height: 900px;
-    transition: height 0.3s;
-
 }
 
 .services-container{
@@ -165,6 +255,8 @@
 
 .accordion-item{
     display: flex;
+    background-color: transparent;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border: 1px solid var(--txt-color);
@@ -179,26 +271,16 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-}
-
-.accordion-toggle{
     background: none;
     border: none;
     padding: 0;
     cursor: pointer
 }
 
-.accordion-toggle img{
-   width: 2rem;
-   transition: transform 0.3s;
-}
-
-.accordion-item.active .accordion-toggle img{
-    transform: rotate(180deg);
-}
-
-.accordion-header h2{
-    font-size: 1.2rem;
+.accordion-header img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
 }
 
 .accordion-content{
@@ -208,13 +290,18 @@
     transition: max-height 0.3s
 }
 
+.accordion-item.active .accordion-header img{
+    transform: rotate(180deg);
+}
+
 .accordion-item.active .accordion-content{
     max-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.accordion-item.active .accordion-content p{
+    width: 100%;
 }
 
 #contact{

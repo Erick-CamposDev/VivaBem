@@ -1,13 +1,28 @@
+//NAV-BAR-MOBILE
+const navButton = document.getElementById("nav-button")
+const sideBar = document.querySelector(".nav-content")
+const closeButton = document.getElementById("close-button")
+
+navButton.addEventListener("click", () =>{
+    sideBar.classList.add('nav-active');
+});
+
+closeButton.addEventListener("click", () =>{
+    sideBar.classList.remove('nav-active');
+})
+
+
+//ACORDEÃO
 const accordionItems = document.querySelectorAll(".accordion-item")
 const services = document.getElementById('services')
 
 accordionItems.forEach(item => {
-    const toggleButton = item.querySelector(".accordion-toggle")
+    const toggleButton = item.querySelector(".accordion-header")
 
 
     toggleButton.addEventListener("click", (event) =>{
         event.stopPropagation();
-       
+
         accordionItems.forEach(i => {
             if (i !== item){
                 i.classList.remove('active')
