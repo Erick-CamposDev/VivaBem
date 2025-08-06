@@ -6,6 +6,7 @@
     --header-bg-color: rgb(245, 237, 237);
     --bg-color-after: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255,255,255,0.6) 55%, rgba(255,255,255,0.2) 85%, rgba(255,255,255,1) 100%);
     --box-shadow: #000;
+    --filter: none
 }
 
 :root[data-theme="dark"]{
@@ -16,7 +17,9 @@
     --header-bg-color: rgb(36, 33, 33); 
     --bg-color-after: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,1) 100%);
     --box-shadow: #fff;
+    --filter: invert(1)
 }
+
 
 .main-header{
     background-color: var(--header-bg-color);
@@ -78,6 +81,39 @@
 }
 
 
+#about-us, #contact{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
 
+.main-header, #home, #services, .main-footer{
+    color: var(--txt-color);
+}
 
+.accordion-header h2{
+    color: var(--txt-color);
+}
 
+.card img{
+    filter: var(--filter);
+}
+
+.accordion-header img{
+    filter: var(--filter);
+}
+
+.contact-item img{
+    filter: var(--filter);
+}
+
+#nav-button img{
+    filter: var(--filter);
+}
+
+#close-button img{
+    filter: var(--filter);
+}
+
+#toggleButton img{
+    filter: var(--filter);
+}
