@@ -54,6 +54,10 @@ h1, h2{
     pointer-events: none;
 }
 
+.presentation-subtitle{
+    color: var(--txt-color);
+}
+
 .card{
     background-color: var(--extra-bg-color);
     color: var(--extra-txt-color);
