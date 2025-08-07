@@ -44,7 +44,6 @@ html, body{
     transition: left 0.3s;
     z-index: 1000;
     font-weight: 600;
-    color: #2e4052;
 
 }
 
@@ -75,13 +74,16 @@ html, body{
 }
 
 .nav-content ul{
-    margin: 0 0 5rem 2rem
+    margin: 0 0 5rem;
 }
 
 .nav-content ul li{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    width: 100%;
+    border-bottom: 1px solid var(--txt-color);
 }
 
 .nav-content.nav-active{
@@ -93,7 +95,7 @@ html, body{
     margin-top: 0.8rem;
     cursor: pointer;
     transition: all 0.3s;
-    color: #2e4052;
+    margin-left: 1.25rem;
 }
 
 .nav-content ul li a:hover{
@@ -150,7 +152,6 @@ html, body{
     font-size: 35px;
     font-weight: 700;
     min-width: 40%;
-    color: #2e4052;
 }
 
 #home h2{
@@ -206,7 +207,6 @@ html, body{
 }
 
 .about-container h2{
-    color: #2e4052;
     padding-bottom: 0.75rem;
 }
 
@@ -254,7 +254,6 @@ html, body{
 
 .services-container .service-title{
     margin-bottom: 0.65rem;
-    color: #2e4052;
 }
 
 .accordion{
@@ -340,9 +339,6 @@ html, body{
     gap: 0.5rem;
 }
 
-.contact-title{
-    color: #2e4052;
-}
 
 .main-footer{
     width: 100%;

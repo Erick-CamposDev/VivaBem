@@ -6,6 +6,7 @@
     --header-bg-color: rgb(245, 237, 237);
     --bg-color-after: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255,255,255,0.6) 55%, rgba(255,255,255,0.2) 85%, rgba(255,255,255,1) 100%);
     --box-shadow: #000;
+    --blue-theme: #2e4052;
     --filter: none
 }
 
@@ -17,7 +18,16 @@
     --header-bg-color: rgb(36, 33, 33); 
     --bg-color-after: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,1) 100%);
     --box-shadow: #fff;
+    --blue-theme: rgb(41, 61, 151);
     --filter: invert(1)
+}
+
+h1, h2{
+    color: var(--blue-theme);
+}
+
+.nav-content ul li a{
+    color: var(--blue-theme);
 }
 
 
@@ -116,4 +126,21 @@
 
 #toggleButton img{
     filter: var(--filter);
+}
+
+.header-nav a{
+    color: var(--blue-theme);
+}
+
+.toggleIcon{
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toggleIcon:hover{
+    transform: scale(1.2);
+}
+
+.toggleIcon.fade-out{
+    opacity: 0;
 }
