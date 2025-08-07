@@ -11,10 +11,45 @@
     <!-- RESET CSS -->
     <link rel="stylesheet" href="src/assets/styles/reset.css">
     <!-- CSS -->
+    <link rel="stylesheet" href="src/assets/styles/imc.css">
     <link rel="stylesheet" href="src/assets/styles/global.css">
     <link rel="stylesheet" href="src/assets/styles/toggle.css">
 </head>
 <body>
+    <header class="second-header">
+        <div class="back-anchor">
+            <a href="index.html">
+                <img src="src/assets/imgs/icons/arrow-left.svg" alt="Botão para voltar para a página principal.">
+            </a>
+        </div>
+        <div class="main-name">
+            <h2>Viva<span>Bem</span></h2>
+        </div>
+        <p>
+            Seu portal de sáude confiável!
+        </p>
+        <div class="toggle-container">
+           <button id="toggleButton"><img class="toggleIcon" height="20px" src="src/assets/imgs/icons/sun.svg" alt="Icone de Sol, Modo Claro"></button>
+        </div>
+    </header>
+    <main class="imc-main">
+        <section id="calculator">
+            <div class="calculator-container">
+                <div class="calculator-title">
+                    <h1>Calculadora IMC</h1>
+                </div>
+                <div class="form">
+                    <form id="imcForm">
+                        <label for="altura">Altura (m):</label><br>
+                        <input type="text" name="altura" id="altura" required placeholder="Digite sua altura">
+                        <label for="peso">Peso (kg)m</label>
+                        <input type="text" name="peso" id="peso" required placeholder="Digite seu peso">
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
     <script src="src/assets/js/toggle-theme.js"></script>
 </body>
 </html>

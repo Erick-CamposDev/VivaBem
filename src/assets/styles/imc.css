@@ -1,0 +1,110 @@
+html, body{
+    height: 100%;
+}
+
+
+body{
+    position: relative;
+    background-image: url("../imgs/dmi-calculator-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    background: var(--bg-color-after);
+    z-index: -1;
+    inset: 0;
+}
+
+
+.second-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5.5rem;
+    gap: 0.65rem;
+}
+
+
+.back-anchor{
+    margin-left: 1rem;
+}
+
+
+.main-name h2{
+    color: rgb(41, 61, 151);
+    font-size: 1.75rem;
+}
+
+.main-name h2 span{
+    color: rgb(8, 131, 63);
+    font-size: 1.75rem;
+}
+
+.second-header p{
+    font-weight: 600;
+}
+
+.toggle-container button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.imc-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+}
+
+.form #imcForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#calculator h1{
+    padding: 2rem 0.5rem 3.5rem 1rem;
+    font-size: 30px;
+}
+
+label{
+    font-weight: 600;
+}
+
+@media (min-width: 280px) and (max-width: 412px){
+
+
+}    
+
+@media (min-width: 768px) and (max-width: 1028px){
+   .second-header .main-name, p{
+    margin-right: 10rem;
+}
+
+    .toggle-container{
+        margin-right: 0;
+    }
+
+    .main-name{
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 1028px){
+    .second-header .main-name, p{
+        margin-right: 10rem;
+    }
+
+}
+
