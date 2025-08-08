@@ -170,6 +170,32 @@ h1, h2{
     transform: scale(1.3);
 }
 
-label{
+.calculator-container{
+    border: 2px solid var(--txt-color);
+}
+
+.input-container label{
     color: var(--extra-txt-color);
+}
+
+.input-container input{
+    border: 1px solid var(--extra-txt-color);
+    color: var(--txt-color);
+}
+
+.input-container input::placeholder{
+    color: var(--extra-txt-color);
+}
+
+.button-container button{
+    border: 1px solid var(--extra-txt-color);
+    background-color: var(--extra-bg-color);
+    color: var(--extra-txt-color);
+    transition: all 0.3s;
+}
+
+.button-container button:hover{
+    border: 1px solid var(--extra-bg-color);
+    background: var(--extra-txt-color);
+    color: var(--extra-bg-color);
 }

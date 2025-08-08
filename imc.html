@@ -25,7 +25,7 @@
         <div class="main-name">
             <h2>Viva<span>Bem</span></h2>
         </div>
-        <p>
+        <p class="main-slogan">
             Seu portal de sáude confiável!
         </p>
         <div class="toggle-container">
@@ -39,17 +39,26 @@
                     <h1>Calculadora IMC</h1>
                 </div>
                 <div class="form">
-                    <form id="imcForm">
-                        <label for="altura">Altura (m):</label><br>
-                        <input type="text" name="altura" id="altura" required placeholder="Digite sua altura">
-                        <label for="peso">Peso (kg)m</label>
-                        <input type="text" name="peso" id="peso" required placeholder="Digite seu peso">
+                    <form id="imcForm" autocomplete="off">
+                        <div class="input-container">
+                            <label for="altura">Altura (m): </label><input type="text" name="altura" id="altura" required placeholder="Digite sua altura" maxlength="4">
+                        </div>
+                        <div class="input-container">
+                            <label for="peso">Peso (kg): </label><input type="text" name="peso" id="peso" required placeholder="Digite seu peso" maxlength="6">
+                        </div>
+                        <div class="button-container">
+                            <button id="submitButton" onclick=calcularImc()>CALCULAR IMC</button>
+                        </div>
+                        <div id="result">
+
+                        </div>
                     </form>
                 </div>
             </div>
 
         </section>
     </main>
+    <script src="src/assets/js/imc-calculator.js"></script>
     <script src="src/assets/js/toggle-theme.js"></script>
 </body>
 </html>

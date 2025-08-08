@@ -1,5 +1,10 @@
 html, body{
     height: 100%;
+    overflow: hidden;
+}
+
+.imc-main, #calculator{
+    height: 90%;
 }
 
 
@@ -57,20 +62,50 @@ body::after{
     padding: 0;
 }
 
-.imc-main{
+#calculator{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.form{
+.calculator-container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 5rem;
+    backdrop-filter: blur(8px);
+}
+
+.calculator-title{
+    margin-bottom: .3rem;
 }
 
 .form #imcForm{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.input-container input{
+    padding: 0.85rem;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input-container input::placeholder{
+    font-family: "Montserrat", sans-serif;
 }
 
 #calculator h1{
@@ -82,13 +117,50 @@ label{
     font-weight: 600;
 }
 
-@media (min-width: 280px) and (max-width: 412px){
+.button-container button{
+    border: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding:  .85rem 2.5rem .85rem;
+    margin-top: 1rem;
+    background: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
 
+#result{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    
+}
 
-}    
+@media (min-width: 280px) and (max-width: 450px){
+    .toggle-container{
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 300px){
+    .calculator-container{
+        width: 85%;
+    }
+
+}
+
+@media (min-width: 768px){
+    .calculator-container{
+        width: 40%;
+    }
+
+    .input-container input{
+        width: 100%;
+    }
+} 
 
 @media (min-width: 768px) and (max-width: 1028px){
-   .second-header .main-name, p{
+   .second-header .main-name, .main-slogan{
     margin-right: 10rem;
 }
 
@@ -102,7 +174,7 @@ label{
 }
 
 @media (min-width: 1028px){
-    .second-header .main-name, p{
+    .second-header .main-name, .main-slogan{
         margin-right: 10rem;
     }
 
