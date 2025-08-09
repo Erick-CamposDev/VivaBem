@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="Site de guia de primeiros soccoros para diversos tipos de problemas">
+    <meta name="author" content="Erick Campos">
+    <title>Guia de Primeiros Socorros | VivaBem</title>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="src/assets/imgs/icons/VivaBemLogoTransparent.png" type="image/png">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="src/assets/styles/reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/assets/styles/first-aid.css">
+    <link rel="stylesheet" href="src/assets/styles/global.css">
+    <link rel="stylesheet" href="src/assets/styles/toggle.css">
+</head>
+<body>
+    <header class="second-header">
+        <div class="back-anchor">
+            <a href="index.html">
+                <img src="src/assets/imgs/icons/arrow-left.svg" alt="Botão para voltar para a página principal.">
+            </a>
+        </div>
+        <div class="main-name">
+            <h2>Viva<span>Bem</span></h2>
+        </div>
+        <p class="main-slogan">
+            Seu portal de sáude confiável!
+        </p>
+        <div class="toggle-container">
+           <button id="toggleButton"><img class="toggleIcon" height="20px" src="src/assets/imgs/icons/sun.svg" alt="Icone de Sol, Modo Claro"></button>
+        </div>
+    </header>
+    <main>
+        <section class="section-presentation">
+            <h1>Guia de Primeiros Socorros</h1>
+            <h2>Aprenda o que fazer em situações de emergência</h2>
+        </section>
+        <section class="emergencies">
+            <div class="grid-container">
+            <article class="card" onclick="mostrar('desmaio')">
+                <img src="" alt="imagem de uma pessoa desmaiada">
+                <h2>Desmaio</h2>
+            </article>
+            <article class="card" onclick="mostrar('sangramento')">
+                <img src="" alt="Imagem de uma pessoa sangrando">
+                <h2>Sangramento</h2>
+            </article>
+            <article class="card" onclick="mostrar('mordida')">
+                <img src="" alt="Imagem de uma pessoa que levou uma mordida de um animal">
+                <h2>Mordida</h2>
+            </article>
+            <article class="card" onclick="mostrar('engasgo')">
+                <img src="" alt="Imagem de uma pessoa sofrendo um engasgo">
+                <h2>Engasgo</h2>
+            </article>
+            <article class="card" onclick="mostrar('fratura')">
+                <img src="" alt="Imagem de uma pessoa com fratura óssea">
+                <h2>Fratura</h2>
+            </article>
+            <article class="card" onclick="mostrar('queimadura')">
+                <img src="" alt="Imagem de uma pessoa com queimadura">
+                <h2>Queimadura</h2>
+            </article>
+            <article class="card" onclick="mostrar('febre')">
+                <img src="" alt="Imagem de uma pessoa com febre">
+                <h2>Febre</h2>
+            </article>
+            <article class="card" onclick="mostrar('choque')">
+                <img src="" alt="Imagem de uma pessoa sofrendo um choque elétrico">
+                <h2>Choque</h2>
+            </article>
+            </div>
+
+        </section>
+        <section id="emergenciesInfo">
+
+        </section>
+    </main>
+    <script src="src/assets/js/first.aid.js"></script>
+    <script src="src/assets/js/toggle-theme.js"></script>
+</body>
+</html>
