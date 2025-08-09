@@ -76,6 +76,7 @@ body::after{
     justify-content: center;
     padding: 2rem 0 5rem;
     backdrop-filter: blur(8px);
+    border-radius: 15px;
 }
 
 .calculator-title{
@@ -102,6 +103,7 @@ body::after{
     background: transparent;
     border-radius: 20px;
     outline: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 .input-container input::placeholder{

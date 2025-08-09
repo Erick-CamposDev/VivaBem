@@ -16,7 +16,7 @@ function calcularImc(){
 
     const imc = weight / (height ** 2);
 
-    if (!height || !height){
+    if (!height || !weight){
         result.textContent = "Insira valores válidos!";
         containerResult.appendChild(result);
         return;
