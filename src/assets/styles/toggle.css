@@ -6,6 +6,7 @@
     --header-bg-color: rgb(245, 237, 237);
     --bg-color-after: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255,255,255,0.6) 55%, rgba(255,255,255,0.2) 85%, rgba(255,255,255,1) 100%);
     --bg-calculator: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    --bg-modal: rgba(0, 0, 0, 0.3);
     --box-shadow: #000;
     --blue-theme: #2e4052;
     --filter: none
@@ -19,6 +20,7 @@
     --header-bg-color: rgb(36, 33, 33); 
     --bg-color-after: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,1) 100%);
     --bg-calculator: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #000000 100%);
+    --bg-modal: rgba(255, 255, 255, 0.3);
     --box-shadow: #fff;
     --blue-theme: rgb(41, 61, 151);
     --filter: invert(1)
@@ -208,3 +210,16 @@ h1, h2{
 }
 
 /*------------GUIA DE PRIMEIROS SOCORROS---------------*/
+.card h2{
+    color: var(--txt-color);
+}
+
+.modal-background{
+    background-color: var(--bg-modal);
+}
+
+.modal-container{
+    background: var(--extra-bg-color);
+    border: 1px solid var(--txt-color);
+    box-shadow: 6px 6px 2px var(--box-shadow);
+}
