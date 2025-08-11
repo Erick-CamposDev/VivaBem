@@ -5,11 +5,15 @@ html, body{
 
 
 .main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 5.5rem;
+    z-index: 99999;
 }
 
 .main-name{
@@ -145,6 +149,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
+    padding-top: 5rem;
 }
 
 #home h1{
@@ -362,6 +367,34 @@ html, body{
     text-align: center;
     font-weight: 600;
     font-size: 100%;
+}
+
+@media (min-width: 280px) and (max-width: 520px){
+    .accordion-item.active .accordion-content{
+        max-height: 950px;
+    }
+
+    #services.active{
+        height: 1400px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 350px){
+    #services.active{
+        height: 1250px;
+    }
+
+}
+@media (min-width: 350px) and (max-width: 450px){
+    #services.active{
+        height: 1035px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 520px){
+    #services.active{
+        height: 900px;
+    }
 }
 
 @media (min-width: 280px) and (max-width: 365px){
