@@ -44,8 +44,23 @@ html, body{
 }
 
 main{
-    max-height: 100%;
+    position: relative;
+    min-height: 100%;
+    background-image: url('../imgs/mental-health-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
+
+main::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--bg-color-after);
+    z-index: -1;
+}
+
 
 .presentation{
     padding: 8rem 2.5rem 2.5rem 2.5rem;
@@ -71,13 +86,57 @@ main{
     justify-content: center;
     gap: 1rem;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    width: 85%;
+    padding: 1.5rem 2rem 2rem;
+    border-radius: 15px;
+    animation: DodgeRight 2s ease-in forwards;
 }
 
 .tips-container{
-    padding-top: 1.5rem;
+   padding-top: 1.5rem;
 }
 
 .tip-list .tip-item span{
     font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@keyframes DodgeRight{
+    0%{
+        transform: translateX(0);
+        opacity: 0
+    }
+
+    50%{
+        transform: translateX(50px);
+        opacity: .5;
+    }
+
+    100%{
+        transform: translateX(50px);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 340px){
+    .tip-list .tip-item span{
+        font-size: 1rem;
+    };
+}
+
+@media (min-width: 280px) and (max-width: 520px){
+    @keyframes DodgeRight{
+    0%{
+        opacity: 0
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+ }
 }
