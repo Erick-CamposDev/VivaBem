@@ -236,9 +236,24 @@ h1, h2{
 .modal-container{
     background: var(--extra-bg-color);
     border: 1px solid var(--txt-color);
-    box-shadow: 6px 6px 2px var(--box-shadow);
+    box-shadow: 4px 4px 8px var(--box-shadow);
+    color: var(--txt-color);
 }
 
 .real-image{
     filter: var(--no-filter);
+}
+
+#closeModalBtn{
+    color: var(--txt-color);
+    border: 1px solid var(--txt-color);
+    background-color: var(--extra-bg-color);
+    transition: all 0.4s ease;
+}
+
+#closeModalBtn:hover{
+    background-color: var(--extra-txt-color);
+    color: var(--bg-color);
+    border: var(--bg-color);
+    cursor: pointer;
 }

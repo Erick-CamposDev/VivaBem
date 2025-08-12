@@ -122,20 +122,70 @@ main::after{
     z-index: 1000;
     top: 0;
     right: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-background.active{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .modal-container{
     display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 15px;    
+    gap: 1rem;
+    z-index: 99999;
 }
 
 .modal-container.active{
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 15px;
+    gap: 1rem;
+}
+
+.modal-title{
+    padding: 0.35rem;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.modal-container .modal-content{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.modal-container .modal-title, .modal-content{
+    font-size: 100%;
+}
+  
+#closeModalBtn{
+    width: 175px;
+    height: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+
+
+@media (min-width: 280px) and (max-width:315px){
+    .card-emergency{
+        width: 250px;
+    }
 }
 
 @media (min-width: 280px) and (max-width:612px){
@@ -147,6 +197,21 @@ main::after{
     .card{
         width: 235px;
     }
+
+    .modal-container{
+        height: auto;
+        width: 70%;
+    }
+
+    .modal-container.active{
+        height: auto;
+        width: 70%;
+    }
+
+    .modal-container .modal-content{
+        margin-bottom: 0;
+    }
+
 }
 
 @media (min-width: 612px) and (max-width: 937px){
@@ -156,10 +221,35 @@ main::after{
     }
 }
 
+@media (min-width: 520px){
+    .modal-container{
+        width: 70%;
+    }
+
+    .modal-container.active{
+        width: 70%;
+    }
+
+
+}
+
 @media (min-width: 1270px){
     .grid-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr
     }
 
+    .modal-container{
+        width: 50%;
+        height: auto;
+    }
+
+    .modal-container.active{
+        width: 50%;
+        height: auto;
+    }
+
+    .modal-container .modal-content{
+        margin-bottom: 3rem;
+    }
 }
