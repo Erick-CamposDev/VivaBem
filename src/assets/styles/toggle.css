@@ -257,3 +257,13 @@ h1, h2{
     border: var(--bg-color);
     cursor: pointer;
 }
+
+/*-----------------SAÚDE MENTAL-------------------*/
+
+.presentation p{
+    color: var(--txt-color)
+}
+
+.tip-list .tip-item{
+    color: var(--txt-color);
+}

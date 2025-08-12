@@ -1,0 +1,83 @@
+html, body{
+    height: 100%;
+}
+
+.second-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5.5rem;
+    gap: .65rem;
+    z-index: 999;
+}
+
+.back-anchor{
+    margin-left: 1rem;
+}
+
+.main-name h2{
+    font-size: 1.75rem;
+    color: rgb(41, 61, 151);
+}
+
+.main-name h2 span{
+    font-size: 1.75rem;
+    color: rgb(8, 131, 63);
+}
+
+.main-slogan{
+    font-weight: 600;
+}
+
+.toggle-container{
+    margin-right: .65rem;
+}
+
+.toggle-container button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+main{
+    max-height: 100%;
+}
+
+.presentation{
+    padding: 8rem 2.5rem 2.5rem 2.5rem;
+}
+
+.presentation h1{
+    font-size: 33px;
+    margin-bottom: 1rem;
+}
+
+.presentation p{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.tips{
+    padding-left: 2.5rem;
+}
+
+.tip-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.tips-container{
+    padding-top: 1.5rem;
+}
+
+.tip-list .tip-item span{
+    font-weight: 600;
+}
