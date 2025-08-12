@@ -106,6 +106,13 @@ body::after{
     font-family: "Montserrat", sans-serif;
 }
 
+.input-container input.active{
+    border: 1.75px solid #ff0000;
+}
+.input-container input.active::placeholder{
+    color: #ff0000;
+}
+
 .input-container input::placeholder{
     font-family: "Montserrat", sans-serif;
 }
