@@ -104,10 +104,12 @@ body::after{
     border-radius: 20px;
     outline: none;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.5s ease-in;
 }
 
 .input-container input.active{
     border: 1.75px solid #ff0000;
+    
 }
 .input-container input.active::placeholder{
     color: #ff0000;

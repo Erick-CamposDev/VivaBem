@@ -102,6 +102,40 @@ main::after{
     font-size: 1.1rem;
 }
 
+.diary{
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.diary-button #diaryButton{
+    padding: 1.25rem;
+    width: 150px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#diaryInput{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+    resize: none;
+    overflow: hidden;
+    width: 500px;
+    height: 200px;
+}
+
+#diaryInput::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
 @keyframes DodgeRight{
     0%{
         transform: translateX(0);
@@ -119,13 +153,17 @@ main::after{
     }
 }
 
-@media (min-width: 280px) and (max-width: 340px){
+@media (min-width: 280px) and (max-width: 350px){
     .tip-list .tip-item span{
         font-size: 1rem;
-    };
+    }
+
+    #diaryInput{
+        width: 250px;
+    }
 }
 
-@media (min-width: 280px) and (max-width: 520px){
+@media (min-width: 280px) and (max-width: 710px){
     @keyframes DodgeRight{
     0%{
         opacity: 0
@@ -139,4 +177,10 @@ main::after{
         opacity: 1;
     }
  }
+}
+
+@media (min-width: 350px) and (max-width: 550px){
+    #diaryInput{
+        width: 300px;
+    }
 }

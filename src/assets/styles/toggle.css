@@ -273,3 +273,26 @@ h1, h2{
     background: var(--extra-bg-color);
     border: 1px solid var(--txt-color);
 }
+
+#diaryButton{
+    border: 1px solid var(--txt-color);
+    background: var(--extra-bg-color);
+    color: var(--txt-color);
+}
+
+#diaryButton:hover{
+    border: 1px solid var(--bg-color);
+    background: var(--extra-txt-color);
+    color: var(--bg-color);   
+}
+
+#diaryInput{
+    color: var(--txt-color);
+    background: var(--extra-bg-color);
+    border: 1px solid var(--txt-color);
+}
+
+#diaryInput::placeholder{
+    color: var(--extra-txt-color);
+}
+
