@@ -274,13 +274,17 @@ h1, h2{
     border: 1px solid var(--txt-color);
 }
 
-#diaryButton{
+.diary-title{
+    color: var(--blue-theme);
+}
+
+#diaryButton, #resetButton{
     border: 1px solid var(--txt-color);
     background: var(--extra-bg-color);
     color: var(--txt-color);
 }
 
-#diaryButton:hover{
+#diaryButton:hover, #resetButton:hover{
     border: 1px solid var(--bg-color);
     background: var(--extra-txt-color);
     color: var(--bg-color);   
@@ -296,3 +300,35 @@ h1, h2{
     color: var(--extra-txt-color);
 }
 
+#lastSaved{
+    color: var(--txt-color);
+}
+
+#entries li{
+    color: var(--txt-color);
+}
+
+#notations{
+    color: var(--txt-color);
+}
+
+.form-container{
+    border: 1px solid var(--extra-txt-color);
+    background-color: var(--extra-bg-color);
+}
+
+#formHumor{
+    color: var(--txt-color);
+}
+
+#testButton{
+    border: 1px solid var(--txt-color);
+    color: var(--txt-color);
+    background: var(--bg-color);
+}
+
+#testButton:hover{
+    border: 1px solid var(--bg-color);
+    background: var(--txt-color);
+    color: var(--bg-color);
+}
