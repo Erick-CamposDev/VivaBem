@@ -63,7 +63,7 @@ function showResult(){
         if (answer){
             result += parseInt(answer.value)
         } else{
-            testResult.innerHTML = "<p>Responda todas as perguntas</p>!"
+            testResult.innerHTML = "<p>Responda todas as perguntas!</p>"
             testResult.style.color = "#ff0000"
             return;
         }
