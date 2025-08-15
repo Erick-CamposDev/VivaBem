@@ -1,3 +1,5 @@
+//DIÁRIO EMOCIONAL//
+
 const lastSaved = document.getElementById("lastSaved")
 
 function save(){
@@ -46,4 +48,44 @@ window.onload = () => {
         li.textContent = entry
         list.appendChild(li)
     })
+}
+
+//TESTE DE HUMOR//
+
+const testResult = document.getElementById("testResult");
+const checkbox = document.querySelectorAll('.checkbox');
+const testButton = document.getElementById('testButton');
+
+function showResult(){
+    let result = 0
+    for (let i = 1; i < 3; i++) {
+        const answer = document.querySelector(`input[name=q${i}]:checked`)
+        if (answer){
+            result += parseInt(answer.value)
+        } else{
+            testResult.innerHTML = "<p>Responda todas as perguntas</p>!"
+            testResult.style.color = "#ff0000"
+            return;
+        }
+    }
+
+    let resultMessage = ""
+    testResult.innerHTML = ""
+    testResult.style.color =  ""
+
+    if (result === 0){
+        resultMessage = "Você parece estar com uma ótima sáude mental!"
+    } else if (result <= 2){
+        resultMessage = "Você está um pouco cansado, sugerimos que descanse sua mente um pouco!"
+    } else if (result <= 5){
+        resultMessage = "Sinais de desgaste moderado, que tal conversar com alguém de confiança sobre como você se sente?"
+    } else{
+        resultMessage = `<p>Sinais de alto desgaste, se você está se sentindo muito triste ou com pensamentos suícidas, procure um psicólogo ou um psiquiatra! Você merece atenção e cuidado emocional!</p>`
+        resultMessage += `<a href="https://www.cvv.org.br/" target="_blank" rel="noopener noreferrer">
+                            Converse com um psicólogo
+                        </a>`
+    }
+
+    
+    testResult.innerHTML = `<p>${resultMessage}</p>`
 }

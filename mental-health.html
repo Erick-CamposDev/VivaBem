@@ -81,26 +81,51 @@
             </div>
             <div class="form-container">
                 <form id="formHumor">
-                    <label>1- Como você se sente hoje?</label><br>
-                    <input type="radio" class="checkbox" name="q1" value="0">Muito Bem 😁<br>
-                    <input type="radio" class="checkbox" name="q1" value="1"> Ok 😐<br>
-                    <input type="radio" class="checkbox" name="q1" value="2"> Triste 😞<br>
-                    <input type="radio" class="checkbox" name="q1" value="3"> Estressado 😠 <br><br>
+                    <label class="question">1- Como você se sente hoje?</label><br>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q1" value="0"><span></span>Muito Bem 😁<br>
+                    </label>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q1" value="1"><span></span>Ok 😐<br>
+                    </label>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q1" value="2"><span></span>Triste 😞<br>
+                    </label>        
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q1" value="3"><span></span>Estressado 😠 <br><br>
+                    </label>
+                    <label class="question">2- Como foi sua noite de sono?</label><br>
+                   <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q2" value="0"><span></span>Dormi bem<br>
+                    </label>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q2" value="1"><span></span>Acordei algumas vezes<br>
+                    </label>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q2" value="2"><span></span>Não dormi direito<br>
+                    </label>        
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q2" value="3"><span></span>Estou exausto<br><br>
+                    </label>
 
-                    <label>2- Como foi sua noite de sono?</label><br>
-                    <input type="radio" class="checkbox" name="q2" value="0">Dormi bem <br>
-                    <input type="radio" class="checkbox" name="q2" value="1">Acordei algumas vezes<br>
-                    <input type="radio" class="checkbox" name="q2" value="2"> Não dormi direito<br>
-                    <input type="radio" class="checkbox" name="q2" value="3"> Estou exausto<br><br>
-
-                    <label> 3- Está conseguindo se concentrar? </label><br>
-                    <input type="radio" class="checkbox" name="q3" value="0">Sim, totalmente<br>
-                    <input type="radio" class="checkbox" name="q3" value="1"> Um pouco difícil<br>
-                    <input type="radio" class="checkbox" name="q3" value="2"> Quase não consigo<br>
-                    <input type="radio" class="checkbox" name="q3" value="3"> Muito disperso<br><br>
+                    <label class="question">3- Está conseguindo se concentrar? </label><br>
+                  <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q3" value="0"><span></span>Sim totalmente!<br>
+                    </label>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q3" value="1"><span></span>Um pouco difícil<br>
+                    </label>
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q3" value="2"><span></span>Quase não consigo<br>
+                    </label>        
+                    <label class="custom-radio"> 
+                        <input type="radio" class="checkbox" name="q3" value="3"><span></span>Muito disperso<br><br>
+                    </label>
                 </form>
                 <div class="test-button">
                     <button id="testButton" onclick="showResult()">Ver Resultado</button>
+                </div>
+                <div id="testResult">
                 </div>
             </div>
         </section>

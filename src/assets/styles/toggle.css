@@ -332,3 +332,20 @@ h1, h2{
     background: var(--txt-color);
     color: var(--bg-color);
 }
+
+.custom-radio span{
+    background: var(--bg-color);
+    border: 1px solid var(--txt-color);
+}
+
+.custom-radio input:checked + span::after{
+    background: var(--blue-theme);
+}
+
+#testResult{
+    color: var(--txt-color);
+}
+
+#testResult a{
+    color: var(--blue-theme)
+}
