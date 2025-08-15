@@ -249,6 +249,9 @@ html, body{
     margin-left: 1rem;
     padding-top: 2rem;
     font-weight: 400;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 .services-container .accordion{
@@ -369,6 +372,29 @@ html, body{
     font-size: 100%;
 }
 
+.services-container.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card-anchor .card{
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideRight 2s forwards;
+}
+
+.card-anchor:nth-child(1) .card {animation-delay: 0s;}
+.card-anchor:nth-child(2) .card {animation-delay: 1s;}
+.card-anchor:nth-child(3) .card {animation-delay: 1.5s;}
+
+
+@keyframes slideRight{
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
 @media (min-width: 280px) and (max-width: 520px){
     .accordion-item.active .accordion-content{
         max-height: 950px;
@@ -401,6 +427,7 @@ html, body{
     .card{
         width: 60px;
         font-size: 60%;
+        height: 100px;
     }
 
     .card img{
