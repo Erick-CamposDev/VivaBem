@@ -1,7 +1,7 @@
 //NAV-BAR-MOBILE
-const navButton = document.getElementById("nav-button")
-const sideBar = document.querySelector(".nav-content")
-const closeButton = document.getElementById("close-button")
+const navButton = document.getElementById("nav-button");
+const sideBar = document.querySelector(".nav-content");
+const closeButton = document.getElementById("close-button");
 
 navButton.addEventListener("click", () =>{
     sideBar.classList.add('nav-active');
@@ -13,11 +13,11 @@ closeButton.addEventListener("click", () =>{
 
 
 //ACORDEÃO
-const accordionItems = document.querySelectorAll(".accordion-item")
-const services = document.getElementById('services')
+const accordionItems = document.querySelectorAll(".accordion-item");
+const services = document.getElementById('services');
 
 accordionItems.forEach(item => {
-    const toggleButton = item.querySelector(".accordion-header")
+    const toggleButton = item.querySelector(".accordion-header");
 
 
     toggleButton.addEventListener("click", (event) =>{
@@ -25,10 +25,10 @@ accordionItems.forEach(item => {
 
         accordionItems.forEach(i => {
             if (i !== item){
-                i.classList.remove('active')
+                i.classList.remove('active');
         }
     });
-    item.classList.toggle('active')
+    item.classList.toggle('active');
 
     const anyActive = Array.from(accordionItems).some(i => i.classList.contains('active'));
         if (anyActive) {
@@ -37,4 +37,4 @@ accordionItems.forEach(item => {
             services.classList.remove('active');
         }
     }); 
-})
+});

@@ -242,6 +242,10 @@ main::after{
     transform: translate(-50%, -50%) scale(1.05);
 }
 
+.custom-radio span:hover{
+    transform: scale(1.15);
+}
+
 #testResult{
     padding: 2rem 1rem 1rem;
     font-weight: 600;

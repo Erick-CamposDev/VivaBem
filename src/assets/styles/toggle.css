@@ -11,6 +11,10 @@
     --blue-theme: #2e4052;
     --filter: none;
     --no-filter: none;
+    --border-color: var(--txt-color);
+    --extra-border-color: var(--extra-txt-color);
+    --hover-color: var(--txt-color);
+    --extra-hover-color: var(--extra-txt-color);
 }
 
 :root[data-theme="dark"]{
@@ -25,8 +29,13 @@
     --box-shadow: #fff;
     --blue-theme: rgb(41, 61, 151);
     --filter: invert(1);
-    --no-filter: none
+    --no-filter: none;
+    --border-color: var(--txt-color);
+    --extra-border-color: var(--extra-txt-color);
+    --hover-color: var(--txt-color);
+    --extra-hover-color: var(--extra-txt-color);
 }
+
 
 h1, h2{
     color: var(--blue-theme);
@@ -44,12 +53,12 @@ h1, h2{
 
 .nav-content{
     background-color: var(--extra-bg-color);
-    border: 2px solid var(--txt-color);
+    border: 2px solid var(--border-color);
     box-shadow: 3px 2px 2px var(--box-shadow);
 }
 
 #close-button{
-    border: 1.7px solid var(--txt-color)
+    border: 1.7px solid var(--border-color)
 }
 
 #home::after{
@@ -179,7 +188,7 @@ h1, h2{
 }
 
 .calculator-container{
-    border: 2px solid var(--txt-color);
+    border: 2px solid var(--border-color);
     background: var(--bg-calculator);
 }
 
@@ -188,7 +197,7 @@ h1, h2{
 }
 
 .input-container input{
-    border: 1px solid var(--extra-txt-color);
+    border: 1px solid var(--extra-border-color);
     color: var(--txt-color);
 }
 
@@ -197,15 +206,15 @@ h1, h2{
 }
 
 .button-container button{
-    border: 1px solid var(--extra-txt-color);
+    border: 1px solid var(--extra-border-color);
     background-color: var(--extra-bg-color);
     color: var(--extra-txt-color);
     transition: all 0.3s;
 }
 
 .button-container button:hover{
-    border: 1px solid var(--extra-bg-color);
-    background: var(--extra-txt-color);
+    border: 1px solid var(--extra-border-color);
+    background: var(--extra-hover-color);
     color: var(--extra-bg-color);
 }
 
@@ -222,7 +231,7 @@ h1, h2{
 .card-emergency{
     background-color: var(--extra-bg-color);
     color: var(--extra-txt-color);
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
 }
 
 .card-emergency h2{
@@ -235,7 +244,7 @@ h1, h2{
 
 .modal-container{
     background: var(--extra-bg-color);
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
     box-shadow: 4px 4px 8px var(--box-shadow);
     color: var(--txt-color);
 }
@@ -246,13 +255,13 @@ h1, h2{
 
 #closeModalBtn{
     color: var(--txt-color);
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
     background-color: var(--extra-bg-color);
     transition: all 0.4s ease;
 }
 
 #closeModalBtn:hover{
-    background-color: var(--extra-txt-color);
+    background-color: var(--extra-hover-color);
     color: var(--bg-color);
     border: var(--bg-color);
     cursor: pointer;
@@ -271,7 +280,7 @@ h1, h2{
 .tip-list{
     color: var(--txt-color);
     background: var(--extra-bg-color);
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
 }
 
 .diary-title{
@@ -279,21 +288,21 @@ h1, h2{
 }
 
 #diaryButton, #resetButton{
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
     background: var(--extra-bg-color);
     color: var(--txt-color);
 }
 
 #diaryButton:hover, #resetButton:hover{
-    border: 1px solid var(--bg-color);
-    background: var(--extra-txt-color);
+    border: 1px solid var(--border-color);
+    background: var(--extra-hover-color);
     color: var(--bg-color);   
 }
 
 #diaryInput{
     color: var(--txt-color);
     background: var(--extra-bg-color);
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
 }
 
 #diaryInput::placeholder{
@@ -313,7 +322,7 @@ h1, h2{
 }
 
 .form-container{
-    border: 1px solid var(--extra-txt-color);
+    border: 1px solid var(--extra-border-color);
     background-color: var(--extra-bg-color);
 }
 
@@ -322,7 +331,7 @@ h1, h2{
 }
 
 #testButton{
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
     color: var(--txt-color);
     background: var(--bg-color);
 }
@@ -335,7 +344,7 @@ h1, h2{
 
 .custom-radio span{
     background: var(--bg-color);
-    border: 1px solid var(--txt-color);
+    border: 1px solid var(--border-color);
 }
 
 .custom-radio input:checked + span::after{
