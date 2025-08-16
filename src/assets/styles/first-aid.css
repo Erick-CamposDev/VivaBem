@@ -200,12 +200,12 @@ main::after{
 
     .modal-container{
         height: auto;
-        width: 70%;
+        width: 95%;
     }
 
     .modal-container.active{
         height: auto;
-        width: 70%;
+        width: 95%;
     }
 
     .modal-container .modal-content{

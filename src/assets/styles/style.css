@@ -467,6 +467,11 @@ html, body{
         font-size: 20px;
     }
 
+    #home h2{
+        font-size: 25px;
+        width: 300px;
+    }
+
     .card{
         width: 150px;
         height: 190px;
