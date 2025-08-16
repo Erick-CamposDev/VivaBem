@@ -168,6 +168,9 @@ html, body{
 .presentation{
     margin-left: 1rem;
     padding-top: 2.5rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideRight 2s forwards;
 }
 
 .card-container{
@@ -386,6 +389,7 @@ html, body{
 .card-anchor:nth-child(1) .card {animation-delay: 0s;}
 .card-anchor:nth-child(2) .card {animation-delay: 1s;}
 .card-anchor:nth-child(3) .card {animation-delay: 1.5s;}
+
 
 
 @keyframes slideRight{

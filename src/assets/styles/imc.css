@@ -77,6 +77,9 @@ body::after{
     padding: 2rem 0 5rem;
     backdrop-filter: blur(8px);
     border-radius: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 2s forwards;
 }
 
 .calculator-title{
@@ -144,7 +147,13 @@ label{
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    
+}
+
+@keyframes slideUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 280px) and (max-width: 450px){

@@ -68,6 +68,9 @@ main::after{
 
 .section-presentation{
     padding: 8rem 2.5rem 2.5rem 2.5rem;
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: slideRight 2s forwards;
 }
 
 .section-presentation h1{
@@ -179,6 +182,13 @@ main::after{
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 35px;
+}
+
+@keyframes slideRight{
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
 }
 
 
