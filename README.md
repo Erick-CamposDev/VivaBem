@@ -30,8 +30,8 @@ O projeto contém páginas e seções que se complementam para criar uma experi�
 - Informações sobre o objetivo do projeto.  
 - Texto institucional destacando o compromisso com a saúde e bem-estar.  
 - Contatos fictícios para fins de portfólio:  
-  - 📧 contato@vivabem.com  
-  - 📞 (11) 98765-4321 
+  - 📧 contato@vivabemsaude.com  
+  - 📞 (11) 4002-8922 
 - Logo + slogan.  
 - Copyright © 2025 VivaBem.  
 - Links úteis para navegação.  
@@ -133,6 +133,6 @@ Esse projeto representa meu empenho em criar soluções digitais que impactam po
 
 ## 📎 Deploy
 
-[Link para o deploy do site VivaBem]()
+[Link para o deploy do site VivaBem](https://erick-camposdev.github.io/VivaBem/)
 
 ✍️ Desenvolvido por **[Erick Campos]** – 2025
