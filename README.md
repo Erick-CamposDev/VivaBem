@@ -30,8 +30,8 @@ O projeto contém páginas e seções que se complementam para criar uma experi�
 - Informações sobre o objetivo do projeto.  
 - Texto institucional destacando o compromisso com a saúde e bem-estar.  
 - Contatos fictícios para fins de portfólio:  
-  - 📧 contato@vivabem.com  
-  - 📞 (11) 98765-4321 
+  - 📧 contato@vivabemsaude.com  
+  - 📞 (11) 4002-8922 
 - Logo + slogan.  
 - Copyright © 2025 VivaBem.  
 - Links úteis para navegação.  
