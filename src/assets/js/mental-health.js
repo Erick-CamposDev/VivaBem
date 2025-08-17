@@ -58,7 +58,7 @@ const testButton = document.getElementById('testButton');
 
 function showResult(){
     let result = 0
-    for (let i = 1; i < 3; i++) {
+    for (let i = 1; i <= 3; i++) {
         const answer = document.querySelector(`input[name=q${i}]:checked`)
         if (answer){
             result += parseInt(answer.value)
@@ -82,7 +82,7 @@ function showResult(){
     } else{
         resultMessage = `<p>Sinais de alto desgaste, se você está se sentindo muito triste ou com pensamentos suícidas, procure um psicólogo ou um psiquiatra! Você merece atenção e cuidado emocional!</p>`
         resultMessage += `<a href="https://www.cvv.org.br/" target="_blank" rel="noopener noreferrer">
-                            Converse com um psicólogo
+                            Converse com um psicólogo ou psiquiatra
                         </a>`
     }
 

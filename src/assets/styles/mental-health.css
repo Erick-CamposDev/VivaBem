@@ -259,10 +259,11 @@ main::after{
 #testResult a{
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s;
 }
 #testResult a:hover{
     text-decoration: underline;
-    
+    font-size: 20px;
 }
 
 
