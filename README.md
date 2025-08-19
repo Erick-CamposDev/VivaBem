@@ -13,7 +13,7 @@ Este projeto foi pensado para ser um **site informativo e interativo sobre saúd
 - ✅ **Animações suaves** usando **CSS keyframes** e **Intersection Observer API** para destacar seções conforme o usuário navega.  
 - ✅ **Responsividade Mobile First**, garantindo ótima usabilidade em celulares, tablets e desktops.  
 - ✅ **Cálculo de IMC (Índice de Massa Corporal)** com feedback visual e informativo.
-- ✅ **Guia de Primeiros socorros dividos em cards com modals interativos.    
+- ✅ **Guia de Primeiros socorros** divididos em cards com modals interativos.    
 - ✅ **Página de saúde mental** com destaque para bem-estar, informações e teste de humor.  
 - ✅ **Navegação clara e intuitiva**, projetada para guiar o usuário pelos conteúdos de forma simples.  
 
